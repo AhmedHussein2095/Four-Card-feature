@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Poppins, sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+
+header {
+  margin: 50px auto;
+  text-align: center;
+  max-width: 500px;
+}
+
+header h1 {
+  
+  color: hsl(234, 12%, 34%);
+  font-size: 2em;
+  font-weight: 200;
+}
+
+span {
+  
+  color: hsl(234, 12%, 34%);
+  font-size: 1em;
+  font-weight: 600;
+}
+
+header p {
+  margin-top: 1em;
+  font-weight: 400;
+  margin-bottom: 1em;
+
+  color: hsl(229, 6%, 66%);
+}
+
+.contenedor {
+   
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  max-width: 1140px;
+}
+.carta {
+  background: white;
+  box-shadow: 0 10px 20px rgba(131, 89, 89, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  
+}
+.carta::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+}
+.carta-cyan::after{
+  background: hsl(180, 62%, 55%);
+}
+
+
+.carta-roja::after{
+  background: hsl(0, 78%, 62%);
+ 
+}
+
+.carta-azul::after{
+  background:  hsl(212, 86%, 64%);
+  
+}
+
+.carta-amarilla::after{
+  background: hsl(34, 97%, 64%);
+ 
+}
+
+
+.carta-enmedio{
+    transform: translateY(50%);
+}
+
+.carta h2{
+    margin-top: 2px;
+    color: hsl(234, 12%, 34%);
+}
+
+.carta p{
+    font-size: 14px;
+    color: hsl(229, 6%, 66%);
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.carta__img{
+    display: block;
+    margin-left: auto;
+
+}
+
+
+
+@media (max-width: 775px){
+  .carta{
+    transform: translateX(0);
+  }
+
+
+}
